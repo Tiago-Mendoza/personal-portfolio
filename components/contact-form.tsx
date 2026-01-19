@@ -103,26 +103,26 @@ export default function ContactForm() {
         )}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid gap-2">
-            <Label htmlFor="name">Name</Label>
-            <Input id="name" name="name" placeholder="Your name" required disabled={isLimitReached} />
+            <Label htmlFor="name">Nome</Label>
+            <Input id="name" name="name" placeholder="Seu nome" required disabled={isLimitReached} />
           </div>
           <div className="grid gap-2">
             <Label htmlFor="email">Email</Label>
-            <Input id="email" name="email" type="email" placeholder="your.email@example.com" required disabled={isLimitReached} />
+            <Input id="email" name="email" type="email" placeholder="seu.email@exemplo.com" required disabled={isLimitReached} />
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="subject">Subject</Label>
-            <Input id="subject" name="subject" placeholder="How can I help you?" required disabled={isLimitReached} />
+            <Label htmlFor="subject">Assunto</Label>
+            <Input id="subject" name="subject" placeholder="Como posso ajudar?" required disabled={isLimitReached} />
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="message">Message</Label>
-            <Textarea id="message" name="message" placeholder="Your message here..." className="min-h-[120px] resize-y" required disabled={isLimitReached} />
+            <Label htmlFor="message">Mensagem</Label>
+            <Textarea id="message" name="message" placeholder="Sua mensagem aqui..." className="min-h-[120px] resize-y" required disabled={isLimitReached} />
           </div>
           <Button type="submit" className="w-full" disabled={isSubmitting || isLimitReached}>
             {isSubmitting ? (
               <span className="flex items-center gap-2">
                 <div className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />
-                Sending...
+                Enviando...
               </span>
             ) : isLimitReached ? (
               <span className="flex items-center gap-2">
@@ -131,7 +131,7 @@ export default function ContactForm() {
             ) : (
               <span className="flex items-center gap-2">
                 <Send className="h-4 w-4" />
-                Send Message
+                Enviar Mensagem
               </span>
             )}
           </Button>
