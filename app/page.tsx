@@ -15,7 +15,7 @@ export default function Portfolio() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold">
             <User className="h-5 w-5" />
-            <span>Your Name</span>
+            <span>Tiago Mendoza</span>
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
@@ -53,17 +53,17 @@ export default function Portfolio() {
         <section className="flex flex-col md:flex-row items-center gap-8 py-12">
           <div className="w-full md:w-1/2 space-y-4">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              Hi, I'm <span className="text-primary">Your Name</span>
+              Olá, Eu sou Tiago Mendoza
             </h1>
             <p className="text-xl text-muted-foreground">
-              Full Stack Developer specializing in building exceptional digital experiences.
+              Sou um Desenvolvedor especializado na criação de experiências digitais excepcionais
             </p>
             <div className="flex gap-4">
               <Button asChild>
-                <Link href="#contact">Contact Me</Link>
+                <Link href="#contact">Entre em Contato</Link>
               </Button>
               <Button variant="outline" asChild>
-                <Link href="#projects">View Projects</Link>
+                <Link href="#projects">Ver Projetos</Link>
               </Button>
             </div>
           </div>
