@@ -19,16 +19,16 @@ export default function Portfolio() {
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
-              About
+              Sobre
             </Link>
             <Link href="#skills" className="text-sm font-medium hover:underline underline-offset-4">
-              Skills
+              Habilidades
             </Link>
             <Link href="#projects" className="text-sm font-medium hover:underline underline-offset-4">
-              Projects
+              Projetos
             </Link>
             <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">
-              Contact
+              Contato
             </Link>
           </nav>
           <div className="flex items-center gap-2">
@@ -76,19 +76,15 @@ export default function Portfolio() {
 
         {/* About Section */}
         <section id="about" className="py-12 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Sobre Mim</h2>
           <div className="max-w-4xl mx-auto">
             <Card>
               <CardContent className="p-6 md:p-8">
                 <p className="text-lg leading-relaxed">
-                  I'm a passionate developer with a strong foundation in web technologies. With several years of
-                  experience building applications, I focus on creating intuitive and performant user experiences. I enjoy
-                  solving complex problems and continuously learning new technologies to improve my craft.
+                  Sou um desenvolvedor apaixonado com uma sólida base em tecnologias web. Gosto de resolver problemas complexos, criar experiências de usuário intuitivas e de alto desempenho e estou sempre aprendendo novas tecnologias para aprimorar minhas habilidades.
                 </p>
                 <p className="text-lg leading-relaxed mt-4">
-                  When I'm not coding, you can find me hiking, reading, or experimenting with new recipes in the kitchen.
-                  I believe in the power of technology to make a positive impact, and I'm always looking for new
-                  opportunities to grow and collaborate.
+                  Acredito no poder da tecnologia para gerar um impacto positivo e estou sempre em busca de novas oportunidades para crescer e colaborar.
                 </p>
               </CardContent>
             </Card>
@@ -97,7 +93,7 @@ export default function Portfolio() {
 
         {/* Skills Section */}
         <section id="skills" className="py-12 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-8 text-center">Skills & Technologies</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Habilidades & Tecnologias</h2>
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               <SkillBadge name="React" level={90} />
@@ -118,7 +114,7 @@ export default function Portfolio() {
 
         {/* Projects Section */}
         <section id="projects" className="py-12 scroll-mt-20">
-          <h2 className="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Projetos em Destaque</h2>
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCard
@@ -240,7 +236,7 @@ export default function Portfolio() {
         <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
+              © {new Date().getFullYear()} Tiago Mendoza. Todos os direitos reservados.
             </p>
           </div>
           <div className="flex items-center gap-4">
