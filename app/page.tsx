@@ -4,6 +4,7 @@ import { Github, Linkedin, Mail, User } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ProjectCard from "@/components/project-card"
+import ProjectCardCarousel from "@/components/project-card-carousel"
 import SkillBadge from "@/components/skill-badge"
 import ContactForm from "@/components/contact-form"
 
@@ -96,18 +97,15 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold mb-8 text-center">Habilidades & Tecnologias</h2>
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              <SkillBadge name="React" level={90} />
-              <SkillBadge name="Next.js" level={85} />
-              <SkillBadge name="TypeScript" level={80} />
-              <SkillBadge name="Node.js" level={75} />
-              <SkillBadge name="Tailwind CSS" level={90} />
-              <SkillBadge name="JavaScript" level={95} />
-              <SkillBadge name="HTML/CSS" level={90} />
-              <SkillBadge name="Git" level={85} />
-              <SkillBadge name="MongoDB" level={70} />
-              <SkillBadge name="PostgreSQL" level={65} />
-              <SkillBadge name="GraphQL" level={60} />
-              <SkillBadge name="Docker" level={50} />
+              <SkillBadge name="Java" />
+              <SkillBadge name="JavaScript" />
+              <SkillBadge name="Git & GitHub" />
+              <SkillBadge name="MySQL" />
+              <SkillBadge name="Tailwind CSS" />
+              <SkillBadge name="HTML" />
+              <SkillBadge name="Angular" />
+              <SkillBadge name="Next.js" />
+              <SkillBadge name="AWS" />
             </div>
           </div>
         </section>
@@ -117,53 +115,13 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold mb-8 text-center">Projetos em Destaque</h2>
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ProjectCard
-                title="E-Commerce Platform"
-                description="A full-featured online store with cart, checkout, and payment processing."
-                tags={["Next.js", "Stripe", "MongoDB"]}
-                imageUrl="/placeholder.svg?height=200&width=300"
-                demoUrl="#"
-                repoUrl="#"
-              />
-              <ProjectCard
-                title="Task Management App"
-                description="A collaborative task manager with real-time updates and team features."
-                tags={["React", "Firebase", "Tailwind"]}
-                imageUrl="/placeholder.svg?height=200&width=300"
-                demoUrl="#"
-                repoUrl="#"
-              />
-              <ProjectCard
-                title="Personal Blog"
-                description="A markdown-based blog with code syntax highlighting and responsive design."
-                tags={["Next.js", "MDX", "Vercel"]}
-                imageUrl="/placeholder.svg?height=200&width=300"
-                demoUrl="#"
-                repoUrl="#"
-              />
-              <ProjectCard
-                title="Weather Dashboard"
-                description="Real-time weather information with location detection and forecasts."
-                tags={["JavaScript", "Weather API", "Chart.js"]}
-                imageUrl="/placeholder.svg?height=200&width=300"
-                demoUrl="#"
-                repoUrl="#"
-              />
-              <ProjectCard
-                title="Recipe Finder"
-                description="Search and save recipes with filtering by ingredients and dietary restrictions."
-                tags={["React", "Node.js", "MongoDB"]}
-                imageUrl="/placeholder.svg?height=200&width=300"
-                demoUrl="#"
-                repoUrl="#"
-              />
-              <ProjectCard
-                title="Portfolio Website"
-                description="This very website showcasing my projects and skills."
-                tags={["Next.js", "Tailwind CSS", "Framer Motion"]}
-                imageUrl="/placeholder.svg?height=200&width=300"
-                demoUrl="#"
-                repoUrl="#"
+              <ProjectCardCarousel
+                title="Jardim Encantado"
+                description="E-commerce de floricultura com CRUD completo de produtos. Inclui vitrine de produtos (buquês, arranjos e presentes), carrinho de compras, autenticação e painel administrativo."
+                tags={["Angular", "TypeScript", "CSS", "JSON Server"]}
+                images={["/jardim-1.jpg", "/jardim-2.jpg", "/jardim-3.jpg"]}
+                demoUrl="https://jardim-angular.vercel.app/buques"
+                repoUrl="https://github.com/Tiago-Mendoza/JardimAngular"
               />
             </div>
           </div>

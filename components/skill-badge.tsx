@@ -1,21 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
 
 interface SkillBadgeProps {
   name: string
-  level: number
 }
 
-export default function SkillBadge({ name, level }: SkillBadgeProps) {
+export default function SkillBadge({ name }: SkillBadgeProps) {
   return (
-    <Card>
+    <Card className="transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-primary cursor-default">
       <CardContent className="p-4">
-        <div className="space-y-2">
-          <div className="flex justify-between items-center">
-            <h3 className="font-medium">{name}</h3>
-            <span className="text-sm text-muted-foreground">{level}%</span>
-          </div>
-          <Progress value={level} className="h-2" />
+        <div className="flex items-center justify-center min-h-[60px]">
+          <h3 className="font-medium text-center">{name}</h3>
         </div>
       </CardContent>
     </Card>
