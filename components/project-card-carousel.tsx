@@ -15,9 +15,11 @@ interface ProjectCardCarouselProps {
   images: string[]
   demoUrl?: string
   repoUrl?: string
+  /** Classes extras na imagem (ex.: scale-110 para recortar margens em branco) */
+  imageClassName?: string
 }
 
-export default function ProjectCardCarousel({ title, description, tags, images, demoUrl, repoUrl }: ProjectCardCarouselProps) {
+export default function ProjectCardCarousel({ title, description, tags, images, demoUrl, repoUrl, imageClassName }: ProjectCardCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const nextImage = () => {
@@ -34,7 +36,7 @@ export default function ProjectCardCarousel({ title, description, tags, images, 
         <img
           src={images[currentIndex] || "/placeholder.svg"}
           alt={`${title} - Imagem ${currentIndex + 1}`}
-          className="w-full h-full object-cover transition-transform duration-300"
+          className={`w-full h-full object-cover object-center transition-transform duration-300 ${imageClassName ?? ""}`}
         />
         
         {/* Navigation Arrows */}

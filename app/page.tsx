@@ -59,12 +59,17 @@ export default function Portfolio() {
             <p className="text-xl text-muted-foreground">
               Sou um Desenvolvedor especializado na criação de experiências digitais excepcionais
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <Button asChild>
                 <Link href="#contact">Entre em Contato</Link>
               </Button>
               <Button variant="outline" asChild>
                 <Link href="#projects">Ver Projetos</Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <a href="/cv.pdf" download>
+                  Baixar Currículo
+                </a>
               </Button>
             </div>
           </div>
@@ -117,11 +122,20 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCardCarousel
                 title="Jardim Encantado"
-                description="E-commerce de floricultura com CRUD completo de produtos. Inclui vitrine de produtos (buquês, arranjos e presentes), carrinho de compras, autenticação e painel administrativo."
-                tags={["Angular", "TypeScript", "CSS", "JSON Server"]}
+                description="E-commerce de floricultura com CRUD completo de produtos. Vitrine com buquês, arranjos e presentes; carrinho de compras; autenticação; painel administrativo para cadastro, edição e exclusão. Backend REST com json-server."
+                tags={["Angular", "TypeScript", "CSS", "json-server"]}
                 images={["/jardim-1.jpg", "/jardim-2.jpg", "/jardim-3.jpg"]}
                 demoUrl="https://jardim-angular.vercel.app/buques"
                 repoUrl="https://github.com/Tiago-Mendoza/JardimAngular"
+                imageClassName="scale-110"
+              />
+              <ProjectCardCarousel
+                title="Controle de Gastos Pessoais"
+                description="Dashboard de gestão financeira para receitas, despesas e orçamentos. Cadastro com categoria, tipo (débito/crédito/PIX) e fixo/variável. Gráficos por categoria e evolução patrimonial (Chart.js), filtros por ano/mês, alertas de orçamento (80%/100%+), extratos em modais e próximos vencimentos. Angular 20, Signals, Standalone Components. Backend com json-server e db.json."
+                tags={["Angular", "TypeScript", "Chart.js", "Signals", "json-server"]}
+                images={["/gastos-pessoais-1.png"]}
+                demoUrl="https://gastos-pessoais-dashboard-angular.vercel.app/"
+                repoUrl="https://github.com/Tiago-Mendoza/Gastos-Pessoais-DashboardAngular"
               />
             </div>
           </div>
