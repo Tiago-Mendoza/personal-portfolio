@@ -75,7 +75,7 @@ export default function Portfolio() {
           </div>
           <div className="w-full md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary/20">
-              <img src="/placeholder.svg?height=256&width=256" alt="Profile" className="object-cover" />
+              <img src="/tiago.png" alt="Tiago Mendoza" className="w-full h-full object-cover" />
             </div>
           </div>
         </section>
