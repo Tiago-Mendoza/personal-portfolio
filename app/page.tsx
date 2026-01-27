@@ -3,10 +3,12 @@ import { Github, Linkedin, Mail, User } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import ProjectCard from "@/components/project-card"
 import ProjectCardCarousel from "@/components/project-card-carousel"
 import SkillBadge from "@/components/skill-badge"
 import ContactForm from "@/components/contact-form"
+import CertificatesSection from "@/components/certificates-section"
 
 export default function Portfolio() {
   return (
@@ -27,6 +29,9 @@ export default function Portfolio() {
             </Link>
             <Link href="#projects" className="text-sm font-medium hover:underline underline-offset-4">
               Projetos
+            </Link>
+            <Link href="#certificates" className="text-sm font-medium hover:underline underline-offset-4">
+              Certificados
             </Link>
             <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">
               Contato
@@ -138,6 +143,13 @@ export default function Portfolio() {
                 repoUrl="https://github.com/Tiago-Mendoza/Gastos-Pessoais-DashboardAngular"
               />
             </div>
+          </div>
+        </section>
+
+        {/* Certificates Section */}
+        <section id="certificates" className="py-12 scroll-mt-20">
+          <div className="max-w-6xl mx-auto">
+            <CertificatesSection />
           </div>
         </section>
 
