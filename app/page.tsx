@@ -142,6 +142,14 @@ export default function Portfolio() {
                 demoUrl="https://gastos-pessoais-dashboard-angular.vercel.app/"
                 repoUrl="https://github.com/Tiago-Mendoza/Gastos-Pessoais-DashboardAngular"
               />
+              <ProjectCardCarousel
+                title="Quiz Game"
+                description="Quiz Game interativo desenvolvido com HTML, CSS e JavaScript puro, focado em lógica de programação, manipulação de DOM e experiência do usuário."
+                tags={["HTML", "CSS", "JavaScript"]}
+                images={["/quiz-game.png"]}
+                demoUrl="https://quizgame-puce.vercel.app/"
+                repoUrl="https://github.com/Tiago-Mendoza/Quiz_game"
+              />
             </div>
           </div>
         </section>
