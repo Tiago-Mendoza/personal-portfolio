@@ -126,6 +126,13 @@ export default function Portfolio() {
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCardCarousel
+                title="Control Poker"
+                description="Plataforma SaaS de gestão para clubes, eventos e home games de poker. Centraliza financeiro, cash game, torneios, ranking e jackpot com indicadores em tempo real, relatórios e módulos integrados — como controle de sangeur, sorteio de mesas, clocker personalizado e cálculo automático de premiação."
+                tags={["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL"]}
+                images={["/control-poker-1.webp", "/control-poker-2.webp", "/control-poker-3.webp"]}
+                demoUrl="https://www.controlpoker.com/"
+              />
+              <ProjectCardCarousel
                 title="Jardim Encantado"
                 description="E-commerce de floricultura com CRUD completo de produtos. Vitrine com buquês, arranjos e presentes; carrinho de compras; autenticação; painel administrativo para cadastro, edição e exclusão. Backend REST com json-server."
                 tags={["Angular", "TypeScript", "CSS", "json-server"]}
