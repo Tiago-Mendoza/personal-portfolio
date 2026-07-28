@@ -166,13 +166,13 @@ def main():
     story.append(
         Paragraph(
             "Desenvolvedor em início de carreira com experiência prática em Front-end (Angular, Next.js/React) "
-            "e Back-end moderno com Next.js, TypeScript, Prisma ORM, PostgreSQL, autenticação, APIs e "
-            "integrações de pagamento, incluindo modelagem de dados e sustentação de sistemas em produção. "
-            "Recentemente ampliei minha atuação para desenvolvimento full-stack, com alta capacidade de "
-            "aprendizado e entrega em ritmo acelerado usando ferramentas atuais de produtividade com IA. "
-            "Conhecimento em deploy em Vercel e metodologias ágeis (Scrum). Busco oportunidade como "
-            "Desenvolvedor Júnior para contribuir com código confiável, evolução contínua e impacto nas "
-            "entregas do time.",
+            "e Back-end moderno (Next.js, TypeScript, Prisma ORM, PostgreSQL, autenticação, APIs e "
+            "integrações de pagamento). Destaque para vibe coding: uso IA no dia a dia para acelerar "
+            "implementação, correção de bugs e evolução de funcionalidades, sempre validando e refinando "
+            "o resultado antes de publicar. Experiência em modelagem de dados, sustentação de sistemas em "
+            "produção e deploy em Vercel. Conhecimento em metodologias ágeis (Scrum). Busco oportunidade "
+            "como Desenvolvedor Júnior para contribuir com entregas consistentes e evolução contínua do "
+            "produto.",
             styles["body"],
         )
     )
