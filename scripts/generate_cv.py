@@ -165,11 +165,14 @@ def main():
     story.extend(section_title("RESUMO PROFISSIONAL", styles))
     story.append(
         Paragraph(
-            "Desenvolvedor em início de carreira com domínio prático em Front-end (Angular) e vivência em "
-            "projetos com Next.js. Sólida base em Back-end (Java/Spring Boot) e modelagem de dados. "
-            "Experiência comprovada em sustentação de sistemas e deploy em ambiente Cloud (AWS). "
-            "Familiarizado com Metodologias Ágeis (Scrum) e práticas de DevOps. Busco estágio onde possa "
-            "aplicar minha capacidade técnica na entrega de código limpo e soluções de alto impacto.",
+            "Desenvolvedor em início de carreira com experiência prática em Front-end (Angular, Next.js/React) "
+            "e Back-end moderno com Next.js, TypeScript, Prisma ORM, PostgreSQL, autenticação, APIs e "
+            "integrações de pagamento, incluindo modelagem de dados e sustentação de sistemas em produção. "
+            "Recentemente ampliei minha atuação para desenvolvimento full-stack, com alta capacidade de "
+            "aprendizado e entrega em ritmo acelerado usando ferramentas atuais de produtividade com IA. "
+            "Conhecimento em deploy em Vercel e metodologias ágeis (Scrum). Busco oportunidade como "
+            "Desenvolvedor Júnior para contribuir com código confiável, evolução contínua e impacto nas "
+            "entregas do time.",
             styles["body"],
         )
     )
